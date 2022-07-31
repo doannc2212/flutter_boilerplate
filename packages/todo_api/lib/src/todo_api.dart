@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:todo_api/todo_api.dart';
 
 class TodoApi {
