@@ -8,18 +8,24 @@ environment:
   flutter: 3.0.4
 
 dependencies:
+  auto_route: ^4.2.1
   bloc: ^8.0.3
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.1
   flutter_localizations:
     sdk: flutter
+  freezed_annotation: ^2.1.0
   intl: ^0.17.0
+  todo_repository:
+    path: packages/todo_repository
 
 dev_dependencies:
   bloc_test: ^9.0.3
+  build_runner: ^2.2.0
   flutter_test:
     sdk: flutter
+  freezed: ^2.1.0+1
   mocktail: ^0.3.0
   very_good_analysis: ^3.0.1
 
