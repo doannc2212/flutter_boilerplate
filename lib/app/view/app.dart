@@ -6,8 +6,8 @@
 // https://opensource.org/licenses/MIT.
 
 import 'package:flutter/material.dart';
+import 'package:flutter_boilerplate/feature/counter/counter.dart';
 import 'package:flutter_boilerplate/l10n/l10n.dart';
-import 'package:flutter_boilerplate/pages/counter/counter.dart';
 import 'package:flutter_boilerplate/theme/theme.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
