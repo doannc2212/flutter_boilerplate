@@ -5,10 +5,11 @@ part 'authentication_event.dart';
 part 'authentication_state.dart';
 part 'authentication_bloc.freezed.dart';
 
-class AuthenticationBloc extends Bloc<AuthenticationEvent, AuthenticationState> {
-  AuthenticationBloc() : super(_Initial()) {
+class AuthenticationBloc
+    extends Bloc<AuthenticationEvent, AuthenticationState> {
+  AuthenticationBloc() : super(const _Initial()) {
     on<AuthenticationEvent>((event, emit) {
-      // TODO: implement event handler
+      // TODO(doannc): implement event handler
     });
   }
 }
