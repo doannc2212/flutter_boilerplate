@@ -1,18 +1,17 @@
 name: todo_repository
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+publish_to: none
 
 environment:
-  sdk: '>=2.17.6 <3.0.0'
-  flutter: '>=1.17.0'
+  sdk: ">=2.17.6 <3.0.0"
+  flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
   todo_api:
     path: ../todo_api
-    publish_to: 'none'
 
 dev_dependencies:
   flutter_test:
