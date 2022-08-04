@@ -1,4 +1,4 @@
-import 'package:flutter_boilerplate/common/constants/constants.dart';
+import 'package:flutter_boilerplate/common/constant/constant.dart';
 import 'package:get_it/get_it.dart';
 import 'package:todo_repository/todo_repository.dart';
 
