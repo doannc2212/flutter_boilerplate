@@ -1,5 +1,5 @@
+import 'package:flutter_boilerplate/data/todo_api/model/model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:todo_api/src/models/network_exception.dart';
 
 part 'api_response.freezed.dart';
 

@@ -1,4 +1,5 @@
-import 'package:todo_api/todo_api.dart';
+import 'package:flutter_boilerplate/data/todo_api/model/model.dart';
+import 'package:flutter_boilerplate/data/todo_api/todo_api.dart';
 
 class TodoRepository {
   TodoRepository({required TodoApi todoApi}) : _todoApi = todoApi;

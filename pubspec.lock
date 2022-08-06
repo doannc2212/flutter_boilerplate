@@ -198,7 +198,7 @@ packages:
     source: hosted
     version: "0.4.1"
   dio:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: dio
       url: "https://pub.dartlang.org"
@@ -574,20 +574,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
-  todo_api:
-    dependency: transitive
-    description:
-      path: "packages/todo_api"
-      relative: true
-    source: path
-    version: "0.0.1"
-  todo_repository:
-    dependency: "direct main"
-    description:
-      path: "packages/todo_repository"
-      relative: true
-    source: path
-    version: "0.0.1"
   typed_data:
     dependency: transitive
     description:
@@ -659,5 +645,5 @@ packages:
     source: hosted
     version: "3.1.1"
 sdks:
-  dart: ">=2.17.6 <3.0.0"
+  dart: ">=2.17.0 <3.0.0"
   flutter: ">=3.0.4"
