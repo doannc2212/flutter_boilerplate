@@ -10,8 +10,8 @@ import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
-
-import 'package:flutter_boilerplate/common/di/di.dart';
+import 'package:flutter_boilerplate/app/di.dart';
+import 'package:flutter_boilerplate/common/store/store.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override
@@ -32,14 +32,16 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
 
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await HiveStore.init();
+
+  configureDependencies();
+
   await runZonedGuarded(
     () async {
-      configureDependencies();
-
-      await BlocOverrides.runZoned(
-        () async => runApp(await builder()),
-        blocObserver: AppBlocObserver(),
-      );
+      Bloc.observer = AppBlocObserver();
+      runApp(await builder());
     },
     (error, stackTrace) => log(error.toString(), stackTrace: stackTrace),
   );

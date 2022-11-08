@@ -8,27 +8,30 @@ environment:
   flutter: 3.0.4
 
 dependencies:
-  auto_route: ^4.2.1
-  bloc: ^8.0.3
+  auto_route: ^5.0.2
+  bloc: ^8.1.0
+  dart_jsonwebtoken: ^2.4.2
   dio: ^4.0.6
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.0.1
+  flutter_bloc: ^8.1.1
   flutter_localizations:
     sdk: flutter
-  freezed_annotation: ^2.1.0
+  freezed_annotation: ^2.2.0
   get_it: ^7.2.0
+  hive: ^2.2.3
   hive_flutter: ^1.1.0
   intl: ^0.17.0
-  json_annotation: ^4.6.0
+  json_annotation: ^4.7.0
 
 dev_dependencies:
-  bloc_test: ^9.0.3
-  build_runner: ^2.2.0
+  auto_route_generator: ^5.0.2
+  bloc_test: ^9.1.0
+  build_runner: ^2.3.0
   flutter_test:
     sdk: flutter
-  freezed: ^2.1.0+1
-  json_serializable: ^6.3.1
+  freezed: ^2.2.0
+  json_serializable: ^6.5.4
   mocktail: ^0.3.0
   very_good_analysis: ^3.0.1
 

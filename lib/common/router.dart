@@ -2,6 +2,9 @@
 
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_boilerplate/module/authentication/view/authentication_router.dart';
+import 'package:flutter_boilerplate/module/landing/view/landing_page.dart';
+import 'package:flutter_boilerplate/module/landing/view/landing_route.dart';
 
 class AppRouteObserver extends AutoRouterObserver {
   @override
@@ -17,20 +20,20 @@ class AppRouteObserver extends AutoRouterObserver {
   }
 }
 
-// @MaterialAutoRouter(
-//   replaceInRouteName: 'Page,Route',
-//   routes: <AutoRoute>[
-//     AutoRoute(
-//       page: LandingPage,
-//       path: '/',
-//       initial: true,
-//       children: [
-//         unauthenticationRouter,
-//         mainRouter,
-//         errorRoute,
-//         loadingRoute,
-//       ],
-//     ),
-//   ],
-// )
-// class $AppRouter {}
+@MaterialAutoRouter(
+  replaceInRouteName: 'Page,Route',
+  routes: <AutoRoute>[
+    AutoRoute(
+      page: LandingPage,
+      path: '/',
+      initial: true,
+      children: [
+        authenticationRouter,
+        mainRouter,
+        errorRoute,
+        loadingRoute,
+      ],
+    ),
+  ],
+)
+class $AppRouter {}

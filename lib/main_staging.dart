@@ -9,5 +9,5 @@ import 'package:flutter_boilerplate/app/app.dart';
 import 'package:flutter_boilerplate/bootstrap.dart';
 
 void main() {
-  bootstrap(() => const App());
+  bootstrap(App.new);
 }
